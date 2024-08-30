@@ -16,29 +16,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../elements/graficosUnidos.gif */ "./elements/graficosUnidos.gif"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Quicksand:wght@700&family=Roboto+Mono:ital,wght@1,500&family=SUSE:wght@800&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* Estilos generales */
 body {
     font-family: arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fbd5e0;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center; /*centrar horizontalmente */
     align-items: center; /*Centrar verticalmente */
+    text-align: justify; 
+    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 /* Estilos para el contenedor principal */
 #app {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*alineación, arriba o abajo, grosor, color */
+    opacity: .7;
 }
 
 /* Estilos para el formulario */
@@ -49,45 +61,92 @@ form {
 
 /* Estilos al input */
 input {
-    width: 75%;
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
+    width: auto; 
 }
 
 /* Estilos al botón */
 button {
     padding: 5px 8px;
-    background-color: #007bff;
+    margin: 2.5px;
+    background-color: #1e47b0;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /*Estilos de la lista */
 ul {
     list-style: none;
     padding: 0;
+    width: 80%;
 }
 
 /*Estilos de los elementos de la lista */
 li {
-    background-color: #f4f4f4;
+    background-image: linear-gradient(to left, #051e4b, #4e1602, #743c4c); /*--> en lugar de background color*/
     padding: 10px;
     border: 1px solid #ddd;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: right;
+    color: white;
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* Estilos para cuando una tarea está completada */
 li.completed {
     text-decoration: line-through;
     color: #888;
-}`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA,sBAAsB;AACtB;IACI,8BAA8B;IAC9B,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB,EAAE,2BAA2B;IACpD,mBAAmB,EAAE,yBAAyB;AAClD;;AAEA,yCAAyC;AACzC;IACI,uBAAuB;IACvB,aAAa;IACb,kBAAkB;IAClB,uCAAuC,EAAE,6CAA6C;AAC1F;;AAEA,+BAA+B;AAC/B;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA,qBAAqB;AACrB;IACI,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,sBAAsB;IACtB,kBAAkB;AACtB;;AAEA,qBAAqB;AACrB;IACI,gBAAgB;IAChB,yBAAyB;IACzB,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,eAAe;AACnB;;AAEA,uBAAuB;AACvB;IACI,gBAAgB;IAChB,UAAU;AACd;;AAEA,wCAAwC;AACxC;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA,kDAAkD;AAClD;IACI,6BAA6B;IAC7B,WAAW;AACf","sourcesContent":["/* Estilos generales */\r\nbody {\r\n    font-family: arial, sans-serif;\r\n    background-color: #f4f4f4;\r\n    margin: 0;\r\n    padding: 0;\r\n    height: 100vh;\r\n    display: flex;\r\n    justify-content: center; /*centrar horizontalmente */\r\n    align-items: center; /*Centrar verticalmente */\r\n}\r\n\r\n/* Estilos para el contenedor principal */\r\n#app {\r\n    background-color: white;\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*alineación, arriba o abajo, grosor, color */\r\n}\r\n\r\n/* Estilos para el formulario */\r\nform {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n/* Estilos al input */\r\ninput {\r\n    width: 75%;\r\n    padding: 8px;\r\n    margin-right: 10px;\r\n    border: 1px solid #ddd;\r\n    border-radius: 3px;\r\n}\r\n\r\n/* Estilos al botón */\r\nbutton {\r\n    padding: 5px 8px;\r\n    background-color: #007bff;\r\n    color: white;\r\n    border: none;\r\n    border-radius: 3px;\r\n    cursor: pointer;\r\n}\r\n\r\n/*Estilos de la lista */\r\nul {\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n\r\n/*Estilos de los elementos de la lista */\r\nli {\r\n    background-color: #f4f4f4;\r\n    padding: 10px;\r\n    border: 1px solid #ddd;\r\n    margin-top: 10px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n/* Estilos para cuando una tarea está completada */\r\nli.completed {\r\n    text-decoration: line-through;\r\n    color: #888;\r\n}"],"sourceRoot":""}]);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+#titulo {
+    display: flex;
+    flex-direction: row;
+}
+#cuerpo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 1;
+}
+#botonAdd {
+    height: 60px;
+    margin-right: 15px;
+}
+::placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAEA,sBAAsB;AACtB;IACI,8BAA8B;IAC9B,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB,EAAE,2BAA2B;IACpD,mBAAmB,EAAE,yBAAyB;IAC9C,mBAAmB;IACnB,yDAAqD;IACrD,4BAA4B;IAC5B,wBAAwB;IACxB,2BAA2B;AAC/B;;AAEA,yCAAyC;AACzC;IACI,8BAA8B;IAC9B,aAAa;IACb,kBAAkB;IAClB,uCAAuC,EAAE,6CAA6C;IACtF,WAAW;AACf;;AAEA,+BAA+B;AAC/B;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA,qBAAqB;AACrB;IACI,YAAY;IACZ,kBAAkB;IAClB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;AACf;;AAEA,qBAAqB;AACrB;IACI,gBAAgB;IAChB,aAAa;IACb,yBAAyB;IACzB,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,eAAe;;IAEf,uCAAuC;IACvC,yBAAyB;IACzB,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA,uBAAuB;AACvB;IACI,gBAAgB;IAChB,UAAU;IACV,UAAU;AACd;;AAEA,wCAAwC;AACxC;IACI,qEAAqE,EAAE,mCAAmC;IAC1G,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,sBAAsB;IACtB,YAAY;;IAEZ,oCAAoC;IACpC,yBAAyB;IACzB,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA,kDAAkD;AAClD;IACI,6BAA6B;IAC7B,WAAW;AACf;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,UAAU;;IAEV,+BAA+B;IAC/B,yBAAyB;IACzB,gBAAgB;IAChB,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,UAAU;AACd;AACA;IACI,YAAY;IACZ,kBAAkB;AACtB;AACA;IACI,qCAAqC;IACrC,yBAAyB;IACzB,gBAAgB;IAChB,kBAAkB;AACtB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Quicksand:wght@700&family=Roboto+Mono:ital,wght@1,500&family=SUSE:wght@800&display=swap');\r\n\r\n/* Estilos generales */\r\nbody {\r\n    font-family: arial, sans-serif;\r\n    background-color: #fbd5e0;\r\n    margin: 0;\r\n    padding: 0;\r\n    height: 100vh;\r\n    display: flex;\r\n    justify-content: center; /*centrar horizontalmente */\r\n    align-items: center; /*Centrar verticalmente */\r\n    text-align: justify; \r\n    background-image: url(../elements/graficosUnidos.gif);\r\n    background-repeat: no-repeat;\r\n    background-size: contain;\r\n    background-position: center;\r\n}\r\n\r\n/* Estilos para el contenedor principal */\r\n#app {\r\n    background-color: rgb(0, 0, 0);\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*alineación, arriba o abajo, grosor, color */\r\n    opacity: .7;\r\n}\r\n\r\n/* Estilos para el formulario */\r\nform {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n/* Estilos al input */\r\ninput {\r\n    padding: 8px;\r\n    margin-right: 10px;\r\n    border: 1px solid #ddd;\r\n    border-radius: 3px;\r\n    width: auto; \r\n}\r\n\r\n/* Estilos al botón */\r\nbutton {\r\n    padding: 5px 8px;\r\n    margin: 2.5px;\r\n    background-color: #1e47b0;\r\n    color: white;\r\n    border: none;\r\n    border-radius: 3px;\r\n    cursor: pointer;\r\n\r\n    font-family: \"Josefin Sans\", sans-serif;\r\n    font-optical-sizing: auto;\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n/*Estilos de la lista */\r\nul {\r\n    list-style: none;\r\n    padding: 0;\r\n    width: 80%;\r\n}\r\n\r\n/*Estilos de los elementos de la lista */\r\nli {\r\n    background-image: linear-gradient(to left, #051e4b, #4e1602, #743c4c); /*--> en lugar de background color*/\r\n    padding: 10px;\r\n    border: 1px solid #ddd;\r\n    margin-top: 10px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: right;\r\n    color: white;\r\n\r\n    font-family: \"Quicksand\", sans-serif;\r\n    font-optical-sizing: auto;\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n\r\n/* Estilos para cuando una tarea está completada */\r\nli.completed {\r\n    text-decoration: line-through;\r\n    color: #888;\r\n}\r\n\r\nh1 {\r\n    text-align: center;\r\n    color: white;\r\n    display: flex;\r\n    flex-direction: column;\r\n    opacity: 1;\r\n\r\n    font-family: \"SUSE\", sans-serif;\r\n    font-optical-sizing: auto;\r\n    font-weight: 800;\r\n    font-style: normal;\r\n}\r\n#titulo {\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n#cuerpo {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    opacity: 1;\r\n}\r\n#botonAdd {\r\n    height: 60px;\r\n    margin-right: 15px;\r\n}\r\n::placeholder {\r\n    font-family: \"Roboto Mono\", monospace;\r\n    font-optical-sizing: auto;\r\n    font-weight: 500;\r\n    font-style: italic;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -184,6 +243,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -619,6 +713,16 @@ const renderTasks = () => {
     });
 };
 
+/***/ }),
+
+/***/ "./elements/graficosUnidos.gif":
+/*!*************************************!*\
+  !*** ./elements/graficosUnidos.gif ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "72e03567d203d5fae0e3.gif";
+
 /***/ })
 
 /******/ 	});
@@ -647,6 +751,9 @@ const renderTasks = () => {
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -672,6 +779,18 @@ const renderTasks = () => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -686,6 +805,55 @@ const renderTasks = () => {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
